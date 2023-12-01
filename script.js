@@ -1,5 +1,3 @@
-// script.js
-
 // Sources for images - an array of objects, each containing the source (src),
 // high-definition source (hdSrc), and caption for an image.*/
 const images = [
