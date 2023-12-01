@@ -1,0 +1,62 @@
+/* Basic Reset */
+body, div, figure {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the image gallery */
+/* Uses CSS Grid layout for the gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Styles for the overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Styles for the caption text */
+.caption {
+    color: white;
+    margin-top: 15px; 
+    text-align: center; 
+    font-size: 1em; 
+}
+
+.overlay {
+    flex-direction: column-reverse; 
+}
+
+.caption {
+    margin-bottom: 15px;
+}
